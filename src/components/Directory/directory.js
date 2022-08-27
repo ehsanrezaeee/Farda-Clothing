@@ -5,8 +5,8 @@ import "./categories.styles.scss";
 const Directory = () => {
   return (
     <div className="categories-container">
-    {category.map((item) => (
-        <DirectoryItem key={item.id} title={item.title} imageUrl={item.imageUrl} />
+    {category.map((category) => (
+        <DirectoryItem key={category.id} category={category} />
       ))}
     </div>
   )
